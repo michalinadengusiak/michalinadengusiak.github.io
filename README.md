@@ -5,5 +5,7 @@ I welcome you warmly!
 
 This is my website..
 
-michalina.dengusiak.github.io/michalina_web_1.html
+https://github.com/michalinadengusiak/michalina.dengusiak.github.io/michalina_web_1.html
+
+    
       
