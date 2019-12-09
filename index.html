@@ -17,6 +17,23 @@ body, html {
     line-height: 1.8;
 }
 
+/* Format collapsible button*/
+.collapsible {
+	background-color: white;
+	border: none;
+	font-family: "Lato", sans-serif;
+	color: #777;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	width: 1000px; // whatever your button's width
+	margin: 0 auto; // auto left/right margins
+}
+
+
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
@@ -54,6 +71,24 @@ a:hover {background-color: #87CEFA; color: white;}
         min-height: 400px;
     }
 }
+
+/*Format collapsible text below*/
+.content {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	color: #777;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
 </style>
 <body>
 
@@ -92,64 +127,69 @@ a:hover {background-color: #87CEFA; color: white;}
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT ME</h3>
   <p class="w3-center"><em>I love programming!</em></p>
-  <p>Hi! My name is Michalina,I am currently 11 years old and go to grade 7. In my short life, I have already accomplished quite a sum of things. 
+  <p>Hi! My name is Michalina,I am currently 11 years old and go to grade 7. In my short life, I have already accomplished quite a sum of things. </p>
+  
+	<button class="collapsible"><i>click to find out more...</i></button>
 
-	My father is a computational engineer, so I was exposed to computers at a  <a target = "_blank" href= "/Content/2019-11-17_FirstComputer.png"><font color = "#FF7F50">very young age</font></a>.
-	It all started out when I was 4; my father was at Forum just looking if any new updates were happening in the world. 
-	Then, I saw the <a target = "_blank" href = "https://www.grasshopper3d.com/group/ladybug/forum/topics/update-happy-yalda?commentId=2985220%3AComment%3A1341141&groupId=2985220%3AGroup%3A658987"><font color = "#FF7F50">Honeybee icon </font></a> and I asked: “What is that?”
-	My father answered that it is the Honeybee icon and I replied: “Bees aren’t yellow!”
-	This made an idea come into my father’s mind so he wrote a message to <a target = "_blank" href="https://github.com/mostaphaRoudsari"><font color = "#FF7F50">Mostapha</font></a> saying that bees aren’t yellow, afterwards together we created a color scheme of what colors bees should be. 
-	I was so pleased to see icons adjusted to new colours. This is the story of how the Honeybee became brownish, orangish and not yellow...
-	</br>
-	</br>
-	Before that I already had spent time with <a target = "_blank" href= "/Content/GraftingEggsQueenBee.JPG"><font color = "#FF7F50">bees</font></a> since my father was a beekeeper,before becoming an engineer. 
-	So I marked queen bees and had some experience with bees.
-	My favorite time with bees is eating the honey and making of the wax candles.
-	</br>
-	</br>
-	Moreover, at that time in my father’s office there was a commotion going on about how <a target = "_blank" href= "/Content/2019-11-17_Revit.png"><font color = "#FF7F50">Revit</font> </a>and BIM are not for Germany and that you should use AutoCAD instead. People said that Revit is too hard, and that AutoCAD is just better. 
-	So, he asked me if I wanted to build the house of my dreams and furnish it. 
-	I was dumbstruck and agreed at once. 
-	Over the weekend, I did this house with a little help from my father. When, my father came back to his office on Monday he made a presentation and said: “You can do it, if my 4-year-old daughter can”. From that moment onwards Revit started being used.
-	</br>
-	</br>
-	When I was 5 years old, an architect did a workshop in our Kindergarten about designing houses and we were supposed to make our own one house out of <a target = "_blank" href= "/Content/PrototypeFirstModel.JPG"><font color = "#FF7F50">cardboard</font></a>. 
-	I did what he wanted and made my own house. As I went home,my father saw my work. 
-	He asked if I want to see how different animals around the world would feel in my house. 
-	Initially I did not fully understand but agreed anyways. 
-	He used Ladybug Tools on <a target = "_blank" href = "https://www.grasshopper3d.com/profile/MichalinaDengusiak"><font color = "#FF7F50">Grasshopper</font> </a>to explain to me the sun position and together we did a sun path analysis on my prototype. 
-	We drew models in Rhino and looked at the different climates.
-	</br>
-	</br>
-	I found this very interesting and I had a lot of fun. Since my father notices that I was interested, he thought that maybe we should try programming. 
-	That's how I started out with Scratch, a program that seemed like a game to me. 
-	I would spend a lot of time working on new games, and without my knowledge getting a head start into the computational world. 
-	Soon, I found out about Python, a basic yet fun program. 
-	It grabbed my attention immediately since it was easy, yet it gave you a lot of possibilities.
-	So, I completed a course on <a target = "_blank" href= "/Content/cert-1073-10595912.jpg"><font color = "#FF7F50">Sololearn</font></a> to deepen my knowledge about it.
-	That was a huge accomplishment since now I can do some things on Python. 
-	</br>
-	</br>
-	Afterwards, my father and <a target = "_blank" href="https://github.com/theo-armour"><font color = "#FF7F50">Theo</font></a> was working on Ladybug Tools Spider gbXML Viewer, and I helped them as I did the user guide videos recording for that.
-	</br>
-	</br>
-	My father showed me the GitHub desktop app and Git Bash. Since at that time he was doing a tutorial about it.
-	To his surprise, I found Git Bash way easier. 
-	He said that a lot of people in his work complained about git bash being too hard.
-	So ,he thought that by showing me and i would decide than he would agreeing with it being too hard or disagreeing with it beig too hard.
-	I don’t understand why he would be surprised it’s just easier since you only need to write about two or four words whereas in the desktop app you have to search for functions for like 20 minutes...
-	</br>
-	</br>
-	Recently, I was surprised and very pleased to be invited to <a target = "_blank" href = "https://www.paramateria.com/" ><font color = "#FF7F50">PARAMETRIA</font></a>. 
-	It was an amazing experience which gave me the opportunity to see the whole process of how something that ends up in a shop is made. 
-	It starts from ideas and ends at fabrication and what can be accomplished with Rhino. It was led by <a target = "_blank" href = "https://github.com/mateuszzwierzycki"><font color = "#FF7F50">Mateusz Zwierzycki</font></a> and we were creating a Parametric Responsive Facade that would in summer block the sunlight to protect from overheating whilst in winter allow to enter the room to heat it.
-	We first started with <a  target = "_blank" href= "/Content/Parametria_PrototypingPaperModel.JPG"><font color = "#FF7F50">prototyping</font></a> it on paper after that we programmed on rhino with Grasshopper components and at the end, we translated it into C# code. 
-	</br>
-	</br>
-	In the fabrication process we laser cut the facade out of cardboard whilst the frame was out of wood. At the end we assembled it all together.
-	I was surprised to see that you could program all that in Rhino! Also, I didn’t know that you would encounter so many problems in the process.
-	Yet, now I know in more detail how a fabrication process looks like.
+<div class= "content">
+	<p>
+		My father is a computational engineer, so I was exposed to computers at a  <a target = "_blank" href= "/Content/2019-11-17_FirstComputer.png"><font color = "#FF7F50">very young age</font></a>.
+		It all started out when I was 4; my father was at Forum just looking if any new updates were happening in the world. 
+		Then, I saw the <a target = "_blank" href = "https://www.grasshopper3d.com/group/ladybug/forum/topics/update-happy-yalda?commentId=2985220%3AComment%3A1341141&groupId=2985220%3AGroup%3A658987"><font color = "#FF7F50">Honeybee icon </font></a> and I asked: “What is that?”
+		My father answered that it is the Honeybee icon and I replied: “Bees aren’t yellow!”
+		This made an idea come into my father’s mind so he wrote a message to <a target = "_blank" href="https://github.com/mostaphaRoudsari"><font color = "#FF7F50">Mostapha</font></a> saying that bees aren’t yellow, afterwards together we created a color scheme of what colors bees should be. 
+		I was so pleased to see icons adjusted to new colours. This is the story of how the Honeybee became brownish, orangish and not yellow...
+		</br>
+		</br>
+		Before that I already had spent time with <a target = "_blank" href= "/Content/GraftingEggsQueenBee.JPG"><font color = "#FF7F50">bees</font></a> since my father was a beekeeper,before becoming an engineer. 
+		So I marked queen bees and had some experience with bees.
+		My favorite time with bees is eating the honey and making of the wax candles.
+		</br>
+		</br>
+		Moreover, at that time in my father’s office there was a commotion going on about how <a target = "_blank" href= "/Content/2019-11-17_Revit.png"><font color = "#FF7F50">Revit</font> </a>and BIM are not for Germany and that you should use AutoCAD instead. People said that Revit is too hard, and that AutoCAD is just better. 
+		So, he asked me if I wanted to build the house of my dreams and furnish it. 
+		I was dumbstruck and agreed at once. 
+		Over the weekend, I did this house with a little help from my father. When, my father came back to his office on Monday he made a presentation and said: “You can do it, if my 4-year-old daughter can”. From that moment onwards Revit started being used.
+		</br>
+		</br>
+		When I was 5 years old, an architect did a workshop in our Kindergarten about designing houses and we were supposed to make our own one house out of <a target = "_blank" href= "/Content/PrototypeFirstModel.JPG"><font color = "#FF7F50">cardboard</font></a>. 
+		I did what he wanted and made my own house. As I went home,my father saw my work. 
+		He asked if I want to see how different animals around the world would feel in my house. 
+		Initially I did not fully understand but agreed anyways. 
+		He used Ladybug Tools on <a target = "_blank" href = "https://www.grasshopper3d.com/profile/MichalinaDengusiak"><font color = "#FF7F50">Grasshopper</font> </a>to explain to me the sun position and together we did a sun path analysis on my prototype. 
+		We drew models in Rhino and looked at the different climates.
+		</br>
+		</br>
+		I found this very interesting and I had a lot of fun. Since my father notices that I was interested, he thought that maybe we should try programming. 
+		That's how I started out with Scratch, a program that seemed like a game to me. 
+		I would spend a lot of time working on new games, and without my knowledge getting a head start into the computational world. 
+		Soon, I found out about Python, a basic yet fun program. 
+		It grabbed my attention immediately since it was easy, yet it gave you a lot of possibilities.
+		So, I completed a course on <a target = "_blank" href= "/Content/cert-1073-10595912.jpg"><font color = "#FF7F50">Sololearn</font></a> to deepen my knowledge about it.
+		That was a huge accomplishment since now I can do some things on Python. 
+		</br>
+		</br>
+		Afterwards, my father and <a target = "_blank" href="https://github.com/theo-armour"><font color = "#FF7F50">Theo</font></a> was working on Ladybug Tools Spider gbXML Viewer, and I helped them as I did the user guide videos recording for that.
+		</br>
+		</br>
+		My father showed me the GitHub desktop app and Git Bash. Since at that time he was doing a tutorial about it.
+		To his surprise, I found Git Bash way easier. 
+		He said that a lot of people in his work complained about git bash being too hard.
+		So ,he thought that by showing me and i would decide than he would agreeing with it being too hard or disagreeing with it beig too hard.
+		I don’t understand why he would be surprised it’s just easier since you only need to write about two or four words whereas in the desktop app you have to search for functions for like 20 minutes...
+		</br>
+		</br>
+		Recently, I was surprised and very pleased to be invited to <a target = "_blank" href = "https://www.paramateria.com/" ><font color = "#FF7F50">PARAMETRIA</font></a>. 
+		It was an amazing experience which gave me the opportunity to see the whole process of how something that ends up in a shop is made. 
+		It starts from ideas and ends at fabrication and what can be accomplished with Rhino. It was led by <a target = "_blank" href = "https://github.com/mateuszzwierzycki"><font color = "#FF7F50">Mateusz Zwierzycki</font></a> and we were creating a Parametric Responsive Facade that would in summer block the sunlight to protect from overheating whilst in winter allow to enter the room to heat it.
+		We first started with <a  target = "_blank" href= "/Content/Parametria_PrototypingPaperModel.JPG"><font color = "#FF7F50">prototyping</font></a> it on paper after that we programmed on rhino with Grasshopper components and at the end, we translated it into C# code. 
+		</br>
+		</br>
+		In the fabrication process we laser cut the facade out of cardboard whilst the frame was out of wood. At the end we assembled it all together.
+		I was surprised to see that you could program all that in Rhino! Also, I didn’t know that you would encounter so many problems in the process.
+		Yet, now I know in more detail how a fabrication process looks like.
 	</p>
+	</div>
 		<p style="font-family: 'Reenie Beanie', cursive;">
 			<font size="8">Michalina Dengusiak</font> </br> </br>
 	  </p>
@@ -339,6 +379,21 @@ function toggleFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+//used for collapse
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+  }
 </script>
 
 </body>
