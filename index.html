@@ -15,7 +15,8 @@
   right:150px;    
 }
 .keepimgpos{
-  float: left
+  float: left;
+  display: inline;
 }
   .cat{
     text-align: justify
@@ -136,12 +137,18 @@ a:hover {background-color: #87CEFA; color: white;}
 
 <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
+    <div class="grid-container">
+  <div class="grid-item">
+<img class="keepimgpos" src="/Content/intro_selfie.jpg" alt="Photo of Me" height="200" >
+  </div>
+  <div class="grid-item">
+
+<h3 class="w3-center">ABOUT ME</h3>
     <p class="w3-center"><em>I love programming!</em></p>
-    </br>
-  <img class="keepimgpos" src="/Content/intro_selfie.jpg" alt="Photo of Me" height="200">
-  <p class="w3-center">Hi! My name is Michalina. I am 14 years old and go to grade 9. In my short life, I have already accomplished quite a sum of things... </p>
-  
+    <p class="w3-center">Hi! My name is Michalina. I am 14 years old and go to grade 9. In my short life, I have already accomplished quite a sum of things... </p>
+  </div>
+  </br>
+  </br>
 	<button class="collapsible"><i>click here to find out more about my breath-taking journey ...</i></button>
 
 <div class= "content">
@@ -546,7 +553,7 @@ I had an amazing person, that took care of me, a mentor per se.
       <div class="w3-large w3-margin-bottom">
         <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Berlin, DE <br>
         <!--<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +49 (0)1761 860 9026<br>-->
-        <a href="mailto:midengusiak@cosmopolitanschool.eu"  style="text-decoration: none;" ><i class="fa fa-envelope fa-fw w3-hover-text-blue w3-xlarge w3-margin-right"></i> Email: midengusiak@cosmopolitanschool.eu<br>
+        <a href="mailto:michalina.dengusiak@gmail.com"  style="text-decoration: none;" ><i class="fa fa-envelope fa-fw w3-hover-text-blue w3-xlarge w3-margin-right"></i> Email: michalina.dengusiak@gmail.com<br>
       </div>
       <!--<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note.</p>
       <!--<form action="/action_page.php" target="_blank">
