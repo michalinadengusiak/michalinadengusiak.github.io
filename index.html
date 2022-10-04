@@ -31,6 +31,21 @@ html, body {
 p {
   font-size: 120%;
 }
+
+.video-responsive {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
   
 /* Format collapsible button*/
 .collapsible {
@@ -44,7 +59,7 @@ p {
 	font-size: 19px;
 	margin: 4px 2px;
 	cursor: pointer;
-	width: 1000px; // whatever your button's width
+	width: 100%; // whatever your button's width
 	margin: 0 auto; // auto left/right margins 
 }
 
@@ -501,26 +516,37 @@ He is soon told to not go anywhere near this fence, but decides to secretly keep
   
   
   <div class="w3-row-padding w3-center">
+    
 	<div class="w3-col m6">
+    <div class= "video-responsive">
 	  <iframe width= "450" height = "225" src="https://www.youtube.com/embed/2QHrbuKIkdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
+	</div>
+    
 	<div class="w3-col m6">
+    <div class= "video-responsive">
 	  <iframe width="450" height = "225" src="https://www.youtube.com/embed/6S9-4qInodg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 	</div>
   	<div class="w3-col m6">
+      <div class= "video-responsive">
 	  <iframe width= "450" height = "225" src="https://www.youtube.com/embed/crGGQk_-dtA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
   </div>
+
+  
   	<div class="w3-col m6">
-	  <iframe width= "450" height = "225" src="https://www.youtube.com/embed/uqlYF0AShPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class= "video-responsive">
+	  <iframe src="https://www.youtube.com/embed/uqlYF0AShPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
 	</div>
   </br>
   </br> 
     <h3 class="w3-center">MY INTERNSHIPS</h3>
+    
     <div class="w3-col m6">
-
-     
       <a target = "_blank" href=
-"https://share.goodnotes.com/s/3tFPwAboMclEhFOHTdcOvp#page-1"> <img src = "https://uploads-ssl.webflow.com/5e7e43ab017d759ded0ce0cb/5f4cfe34b7602fa699ff3dd4_MICROPSI_Motiv_1_FINAL.jpg" alt = "Micropsi robot image" width= "460" height = "308">
+"https://share.goodnotes.com/s/3tFPwAboMclEhFOHTdcOvp#page-1"> <img src = "https://uploads-ssl.webflow.com/5e7e43ab017d759ded0ce0cb/5f4cfe34b7602fa699ff3dd4_MICROPSI_Motiv_1_FINAL.jpg" alt = "Micropsi robot image" width= "100%" height = "100%">
         </a>
 	</div>
   </div>
