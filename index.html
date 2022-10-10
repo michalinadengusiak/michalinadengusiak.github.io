@@ -11,6 +11,42 @@
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Ubuntu+Mono|Itim|Reenie+Beanie|Girassol|Unica+One" rel="stylesheet">
 <style>
 
+  /* (A) WRAPPER */
+.fullwrap {
+  position: relative; /* required for (c2) */
+  max-width: 500px; /* optional */
+}
+ 
+/* (B) RESPONSIVE IMAGE */
+.fullwrap img { width: 100%; }
+ 
+/* (C) CAPTION */
+.fullcap {
+  /* (C1) DIMENSIONS */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+ 
+  /* (C2) POSITION */
+  position: absolute;
+  top: 0; left: 0;
+  text-align: center;
+  padding-top: 30%;
+ 
+   /* (C3) COLORS */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+ 
+/* (D) SHOW/HIDE */
+.fullcap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.fullwrap:hover .fullcap {
+  visibility: visible; opacity: 1;
+}
+
 .keepimgpos{
   float: left;
   display: inline;
@@ -304,14 +340,18 @@ Afterwards, just to make it even more fun, <a target = "_blank" href= "https://y
 	<p>
 	<p style="font-family: 'Girassol', cursive;">
 	<font size="23">Book blog:</font></p>
-		<a target = _blank href = "https://www.goodreads.com/book/show/22609358-the-seven-sisters"><font color = "#FF7F50">The Seven Sisters</a> </font>by Lucinda Riley
-		</br>
-		It is about six sisters who were adopted by a man they call "Pa Salt" from all around the world and named after the Seven Sisters of the Pleiades.Their names are: Maia, Ally, Star, Cealano, Electra and Merope- the missing sister.
+
+<div class="fullwrap">
+  <img src="https://cdn.standaardboekhandel.be/product/9781529003451/front-medium-1053482042.jpg">
+  <div class="fullcap">
+    It is about six sisters who were adopted by a man they call "Pa Salt" from all around the world and named after the Seven Sisters of the Pleiades.Their names are: Maia, Ally, Star, Cealano, Electra and Merope- the missing sister.
     This is a series, each book is one sister's search for her biological family.
 		It is about each of them going through an adventure to uncover their past, from relatives or finding other ways to do so.
-		The series isn't finished yet, but I do hope it will be soon, so that I can dive into yet another satisfying story of the sisters.
-		</br>
-		</br>
+		The series isn't finished yet, but I do hope it will be soon, so that I can dive into yet another satisfying story of the sisters.<br>
+  </div>
+</div>
+</br>
+</br>
 		<a target = _blank href = "https://www.goodreads.com/book/show/37868569-we-set-the-dark-on-fire"><font color= "#FF7F50">We Set the Dark on Fire</a> </font>by Tehlor Kay Mejia
 		</br>
 		This is another of my favorite books of all time!
