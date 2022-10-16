@@ -11,6 +11,24 @@
 <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Ubuntu+Mono|Itim|Reenie+Beanie|Girassol|Unica+One" rel="stylesheet">
 <style>
 
+
+  .container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  text-align:center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  
+  
   /* (A) WRAPPER */
 .fullwrap {
   position: relative; /* required for (c2) */
@@ -18,7 +36,7 @@
 }
  
 /* (B) RESPONSIVE IMAGE */
-.fullwrap img { width: 50%; }
+.fullwrap img { width: 100%; }
  
 /* (C) CAPTION */
 .fullcap {
@@ -26,7 +44,8 @@
   box-sizing: border-box;
   width: img.width;
   height: 100%;
- 
+  
+  
   /* (C2) POSITION */
   position: absolute;
   top: 0; left: 0;
@@ -35,6 +54,7 @@
    /* (C3) COLORS */
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
+
 }
  
 /* (D) SHOW/HIDE */
@@ -339,6 +359,9 @@ Afterwards, just to make it even more fun, <a target = "_blank" href= "https://y
 	<p>
 	<p style="font-family: 'Girassol', cursive;">
 	<font size="23">Book blog:</font></p>
+
+
+  
 
 <div class="fullwrap">
   <img src="https://cdn.standaardboekhandel.be/product/9781529003451/front-medium-1053482042.jpg" height= 50%>
