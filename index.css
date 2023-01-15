@@ -91,7 +91,7 @@ p {
   
 /* Format collapsible button*/
 .collapsible {
-	background-color: white;
+  background-color: white;
 	border:#93ad98;
 	font-family: "Lato", sans-serif;
 	color: #777;
@@ -103,6 +103,10 @@ p {
 	cursor: pointer;
 	width: 100%; // whatever your button's width
 	margin: 0 auto; // auto left/right margins 
+}
+
+.collapsible:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 
