@@ -91,6 +91,7 @@ p {
   
 /* Format collapsible button*/
 .collapsible {
+  border-radius: 12px;
   background-color: white;
 	border:#93ad98;
 	font-family: "Lato", sans-serif;
