@@ -164,3 +164,39 @@ a:hover {background-color: #87CEFA; color: white;}
 	text-align: left;
 	font-size: 19px;
 }
+
+
+
+/* Add the following styles for hover effect on the book images */
+.fullwrap {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fullwrap img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.fullwrap .fullcap {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.fullwrap:hover img {
+    transform: scale(1.1);
+}
+
+.fullwrap:hover .fullcap {
+    opacity: 1;
+}
